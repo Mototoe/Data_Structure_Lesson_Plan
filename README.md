@@ -3,8 +3,8 @@
 ## Introduction 
  &ensp; This is to act as a plan for 3 lessons to help people understand and learn data structures. This lesson plan will cover bigO notation ,stacks, linked list, and trees. These sections wil be listed below with a link to each lesson.  
 + [Stacks]()
-+ [Linked
-+ [rees]()
++ [Linked List]()
++ [Trees]()
 
 
 ## About Me
