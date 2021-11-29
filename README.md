@@ -3,7 +3,7 @@
 ## Introduction 
  &ensp; This is to act as a plan for 3 lessons to help people understand and learn data structures. This lesson plan will cover bigO notation ,stacks, linked list, and trees. These sections wil be listed below with a link to each lesson.  
 + [BigO Notation](https://github.com/Mototoe/Data_Structure_Lesson_Plan/blob/main/BigO%20Notation.md)
-+ [Stacks]()
++ [Stacks](https://github.com/Mototoe/Data_Structure_Lesson_Plan/blob/main/Stack.md)
 + [Linked List]()
 + [Trees]()
 
