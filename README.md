@@ -1,3 +1,3 @@
 # Data Structure Lesson Plan
 
-##Introduction 
+## Introduction 
