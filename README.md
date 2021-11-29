@@ -9,4 +9,4 @@
 
 
 ## About Me
-&emsp; My name is Brandon McFarland and I am as student at BYUI. I major is computer science and I am fluent in Python, so my examples and problems will all be in phython. I have recently went through a class on data structure and I plan to use the knowledge i gained to help others to leant and be successful
+&emsp; My name is Brandon McFarland and I am as student at BYUI. I major is computer science and I am fluent in Python, so my examples and problems will all be in phython. I have recently went through a class on data structure and I plan to use the knowledge i gained to help others to leant and be successful.
