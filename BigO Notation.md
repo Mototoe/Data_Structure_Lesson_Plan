@@ -16,11 +16,11 @@ def find_Jerry(list_names):
 	return False 
  
 &emsp;&ensp; This would be O(n) because if you look at the loop that goes through the list list_names, its performance depends on if Jerry is in the list. So if we put n to represent the list. In the worst case, bob is not on the list making the big O O(n)
-
+'''python
 def loops(x):
 	for i in range(x):
 		print(i)
 	for f in range(x):
 		print(i**2)
-   
+   '''
 &emsp;&ensp; For this example, each loop is performing at a O(n)in the function. This seems like it would be the same as the previous example but since both are performing at O(n), it will look more like O(n^2) which is twice as inefficient as O(n)
