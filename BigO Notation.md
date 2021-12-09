@@ -16,7 +16,7 @@ def find_Jerry(list_names):
 	return False 
  
 &emsp;&ensp; This would be O(n) because if you look at the loop that goes through the list list_names, its performance depends on if Jerry is in the list. So if we put n to represent the list. In the worst case, bob is not on the list making the big O O(n)
-'''python
+'''Python
 def loops(x):
 	for i in range(x):
 		print(i)
