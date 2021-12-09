@@ -22,5 +22,5 @@ def loops(x):
 		print(i)
 	for f in range(x):
 		print(i**2)
-   '''
+'''
 &emsp;&ensp; For this example, each loop is performing at a O(n)in the function. This seems like it would be the same as the previous example but since both are performing at O(n), it will look more like O(n^2) which is twice as inefficient as O(n)
