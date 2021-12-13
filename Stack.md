@@ -60,7 +60,7 @@ stack.append('a')
 stack.append('b')
 stack.append('c')
 def add2stack(item):
-  # isnsert code here
+  # insert code here
   pass
   
 #test
@@ -82,25 +82,50 @@ stack.pop()
 stack.append(65) #[3, 65]
 stack.append(85) #[3, 65, 85]
 stack.pop()
-stack.append(6) [3, 65]
-stack.append(69) [3, 69, 9, 7]
-stack.append(9)
-stack.append(7)
+stack.append(6)  #[3, 65, 6]
+stack.append(69) #[3, 6, 65, 69]
+stack.append(9)  #[3, 6, 65, 69, 9]
+stack.append(7)  #[3, 6, 65, 69, 9, 7]
 stack.pop()
 stack.pop()
-stack.append(10)
-stack.append(20)
+stack.append(10) #[3, 6, 65, 69, 10]
+stack.append(20) #[3, 6, 65, 69, 10, 20]
 stack.pop()
 stack.pop()
-stack.append(11)
-stack.append(12)
+stack.append(11) #[3, 6, 65, 69, 11]
+stack.append(12) #[3, 6, 65, 69, 11, 12]
 stack.pop()
 stack.pop()
 stack.pop()
-stack.append(7)
-stack.append(17)
-stack.append(30)
-stack.append(19)
+stack.append(7)  #[3, 6, 65, 7]
+stack.append(17) #[3, 6, 65, 7, 17]
+stack.append(30) #[3, 6, 65, 7, 17, 30]
+stack.append(19) #[3, 6, 65, 7, 17, 30, 19]
 stack.pop()
 stack.pop()
+stack.pop()
+print(stack)     #[3, 6, 65, 7]
+```
+### Solution 2
+```python 
+stack = stack()
+ 
+# append() function to push
+# element in the stack
+stack.append('a')
+stack.append('b')
+stack.append('c')
+def add2stack(item):
+    if item == stack: 
+        append.stack(item)
+        return
+    else:pass
+  
+#test
+add2stack(d)
+print (stack)
+add2stack(e)
+print (stack)
+ad2stack(c)
+print
 ```
