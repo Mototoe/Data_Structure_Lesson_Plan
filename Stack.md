@@ -14,8 +14,8 @@ if item_1 == 7:
         stack.push(i)
     print(f"Stack: {stack}")
 ```
-##Practice Problems
-###Problem 1
+## Practice Problems
+### Problem 1
 &emsp;&ensp; For this probelm you want to figure out what left in the stack at the end with out running the code. 
 ```python 
 stack = []
@@ -49,7 +49,7 @@ stack.append(19)
 stack.pop()
 stack.pop()
 ```
-###Problem 2
+### Problem 2
 &ensp;&emsp; 
 ```python
 stack = stack()
@@ -70,8 +70,8 @@ add2stack(e)
 print (stack)
 
 ```
-##Solutions
-###Solution 1
+## Solutions
+### Solution 1
 ```python
 stack = []
 stack.append(3)  #[3]
@@ -82,8 +82,8 @@ stack.pop()
 stack.append(65) #[3, 65]
 stack.append(85) #[3, 65, 85]
 stack.pop()
-stack.append(6)
-stack.append(69)
+stack.append(6) [3, 65]
+stack.append(69) [3, 69, 9, 7]
 stack.append(9)
 stack.append(7)
 stack.pop()
