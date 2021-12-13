@@ -1,12 +1,12 @@
 # Stacks
 
 ## &ensp; Definition
-&emsp;&ensp; A stack is a way of organizing data into a usable structure when programming. This data structure is a linear data structure, which means that it can only be worked with from one side of the structure. How a stack specifficly works is by a last in first out system, which can commenly be compared to pancake stacks to data stucture stacks. They are compared often because just like with pancakes you eat or grab, you do so from the top and not the bottom and the same happens with a stack data structure. With the stack the the last thing put into the stack is the first that can come off, it can be better visualized by the figure below. It is uses for security programs often in being able to imform who was the last one to use a certain item.
+&emsp;&ensp; A stack is a way of organizing data into a usable structure when programming. This data structure is a linear data structure, which means that it can only be worked with from one side of the structure. How a stack specifically works is by a last in the first out system, which can commonly be compared to pancake stacks to data structure stacks. They are compared often because just like with pancakes you eat or grab, you do so from the top and not the bottom and the same happens with a stack data structure. With the stack the last thing put into the stack is the first that can come off, it can be better visualized by the figure below. It is used for security programs often in being able to inform who was the last one to use a certain item.
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](https://user-images.githubusercontent.com/83718823/145653795-9025205f-38f0-4cab-aaf9-04cd1383034e.png)
 
 ## Example and Efficiencey 
-&emsp;&emsp; When dealing with stacks there is 3 primary things to do with the stack, which are push, pop, peek. To start the push command allows us to add data to the stack and The new data will become the new top. The brings me to the next command, which is pop. The Pop function allows us to reamove things form the stack but when used it will remaove the top piece of data. When doing either of these things the data structure efficency is O(1) becasue they are generay simple commmands and dont require a lot of memory. Moving to the last command function is peek, this command is kinda a exception to how the stack functions because it allow you to look into the middle of teh stack and recieve its values. The efficency of that command is generally O(1) like the previous ones. the efficency can Be decreased if you search thorough a stack with a loop to find something in the stack. In the worst case when people use loop through stacks it's efficenacy will trun to O(n). See the example below of a example of this.
+&emsp;&emsp; When dealing with stacks there are 3 primary things to do with the stack, which are push, pop, peek. To start the push command allows us to add data to the stack and The new data will become the new top. The brings me to the next command, which is pop. The Pop function allows us to remove things from the stack but when used it will remove the top piece of data. When doing either of these things the data structure efficiency is O(1) because they are generally simple commands and don't require a lot of memory. Moving to the last command function is peek, this command is kinda an exception to how the stack functions because it allows you to look into the middle of the stack and receive its values. The efficiency of that command is generally O(1) as the previous ones. the efficiency can Be decreased if you search through a stack with a loop to find something in the stack. In the worst case when people use to loop through stacks its efficiency will turn to O(n). See the example below of an example of this.
 ```python
 if item_1 == 7:
     stack = Stack()
@@ -50,7 +50,7 @@ stack.pop()
 stack.pop()
 ```
 ### Problem 2
-&ensp;&emsp; 
+&ensp;&emsp; For this problem you are going to practice adding and removing from a stack.
 ```python
 
 #setting up starting list
@@ -59,7 +59,10 @@ stack = ['a','b','c']
 def add2stack(item):
   # insert code here
   pass
-  
+  #removes from stack using a function
+def remove_S(item, stack): 
+    #Insert code
+    
 #test
 add2stack(d)
 print (stack)
@@ -109,11 +112,14 @@ print(stack)     #[3, 6, 65, 7]
 #setting up stack
 stack = ['a','b','c']
 
-#adds to the list using a function
+#adds to the stack using a function
 def add2stack(item, stack):
     stack.append(item)
     return stack
-    
+#removes from stack using a function
+def remove_S(item, stack): 
+    stack.pop()
+    return stack
 
 #test
 add2stack('d',stack)
@@ -122,5 +128,7 @@ add2stack('e',stack)
 print (stack)
 add2stack('f',stack)
 print(stack)
-print
+remove_S(stack)
+remove_S(stack)
+print(stack)
 ```
