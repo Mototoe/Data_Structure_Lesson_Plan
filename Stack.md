@@ -1,7 +1,7 @@
 ## Stacks
 
 ## &ensp; Definition
-&emsp;&ensp; A stack is a way of organizing data into a usable structure when programming. This data structure is a linear data structure, which means that it can only be worked with from one side of the structure. How a stack specifficly works is by a last in first out system, which can commenly be compared to pancake stacks to data stucture stacks. They are compared often because just like with pancakes you eat or grab, you do so from the top and not the bottom and the same happens with a stack data structure. With the stack the the last thing put into the stack is the first that can come off, it can be better visualized by the figure below. 
+&emsp;&ensp; A stack is a way of organizing data into a usable structure when programming. This data structure is a linear data structure, which means that it can only be worked with from one side of the structure. How a stack specifficly works is by a last in first out system, which can commenly be compared to pancake stacks to data stucture stacks. They are compared often because just like with pancakes you eat or grab, you do so from the top and not the bottom and the same happens with a stack data structure. With the stack the the last thing put into the stack is the first that can come off, it can be better visualized by the figure below. It is uses for security programs often in being able to imform who was the last one to use a certain item.
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![image](https://user-images.githubusercontent.com/83718823/145653795-9025205f-38f0-4cab-aaf9-04cd1383034e.png)
 
@@ -52,13 +52,10 @@ stack.pop()
 ### Problem 2
 &ensp;&emsp; 
 ```python
-stack = stack()
- 
-# append() function to push
-# element in the stack
-stack.append('a')
-stack.append('b')
-stack.append('c')
+
+#setting up starting list
+stack = ['a','b','c']
+
 def add2stack(item):
   # insert code here
   pass
@@ -108,24 +105,22 @@ print(stack)     #[3, 6, 65, 7]
 ```
 ### Solution 2
 ```python 
-stack = stack()
- 
-# append() function to push
-# element in the stack
-stack.append('a')
-stack.append('b')
-stack.append('c')
-def add2stack(item):
-    if item == stack: 
-        append.stack(item)
-        return
-    else:pass
-  
+
+#setting up stack
+stack = ['a','b','c']
+
+#adds to the list using a function
+def add2stack(item, stack):
+    stack.append(item)
+    return stack
+    
+
 #test
-add2stack(d)
+add2stack('d',stack)
 print (stack)
-add2stack(e)
+add2stack('e',stack)
 print (stack)
-ad2stack(c)
+add2stack('f',stack)
+print(stack)
 print
 ```
