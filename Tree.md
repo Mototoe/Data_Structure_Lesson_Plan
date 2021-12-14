@@ -5,6 +5,6 @@
 &ensp;&emsp;&ensp;&emsp;&ensp;&emsp;&ensp;&emsp;&ensp;&emsp;&ensp;&emsp;&ensp;&emsp;&ensp;![image](https://user-images.githubusercontent.com/83718823/145931121-178fc454-7f66-4cda-a4b8-ceb0d1c14825.png)
 
 ## &ensp; Tree Efficency and Example
- &ensp;&emsp; The tree data structure tends to be on of the more effective data structures taht we revieved although they were used for slightly different reasons. This is thanks to how we searsh for information through this datat structure. The principople we us is recursion, this is a methood of looping through all of a data structure from leaft to right. this method allows tree data structure to be able to reach a constant O(log n)
+ &ensp;&emsp; The tree data structure tends to be on of the more effective data structures taht we revieved although they were used for slightly different reasons. This is thanks to how we searsh for information through this datat structure. The principople we us is recursion, this is a methood of looping through all of a data structure from leaft to right. This method allows tree data structure to be able to reach a constant O(log n), which the only big O notation that is better is o(1). Although there are exceptions to tree data structures taht are no balenced 
 
 ![indirect1](https://user-images.githubusercontent.com/83718823/145931162-c52c6e51-b81b-440d-a636-a455b6c2a1f8.jpg)
