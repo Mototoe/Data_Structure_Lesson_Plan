@@ -22,7 +22,7 @@ class Node:
 root = Node(10)
 root.P_Tree()
 ```
-##Practice Problems
+## Practice Problems
 ### &ensp; Problem 1
 &ensp;&emsp; This problem will help you to understand how to insert values into the tree data strucrture.
 ```python
@@ -35,12 +35,130 @@ class binary_tree:
         self.value = value
 
     def insert(self, value):
-        #insert value into the tree
+        #Insert values into the tree
         pass
+    def print_tree(self):
+        #traverse the tree and print it in order
+        pass
+
+root = binary_tree(100)
+root.insert(50)
+root.insert(55)
+root.insert(60)
+root.insert(20)
+root.insert(52)
+
+
+root.print_tree()
+```
+### &ensp; Problem 2
+&ensp;&emsp; In this problem we will be continueing the code made early and traversing it to print them in order
+```python
+class binary_tree:
+
+    def __init__(self, value):
+
+        self.left = None
+        self.right = None
+        self.value = value
+
+    def insert(self, value):
+
+        if self.value:
+            if value < self.value:
+                if self.left is None:
+                    self.left = binary_tree(value)
+                else:
+                    self.left.insert(value)
+            elif value > self.value:
+                if self.right is None:
+                    self.right = binary_tree(value)
+                else:
+                    self.right.insert(value)
+        else:
+            self.value = value
+
+    def print_tree(self):
+        #traverse the tree and print it in order
+        pass
+
+root = binary_tree(100)
+root.insert(50)
+root.insert(55)
+root.insert(60)
+root.insert(20)
+root.insert(52)
+root.print_tree()
+
+```
+### &ensp; Solution 1
+```python
+class binary_tree:
+
+    def __init__(self, value):
+
+        self.left = None
+        self.right = None
+        self.value = value
+
+    def insert(self, value):
+
+        if self.value:
+            if value < self.value:
+                if self.left is None:
+                    self.left = binary_tree(value)
+                else:
+                    self.left.insert(value)
+            elif value > self.value:
+                if self.right is None:
+                    self.right = binary_tree(value)
+                else:
+                    self.right.insert(value)
+        else:
+            self.value = value
+
+    def print_tree(self):
+        #traverse the tree and print values in order
+        pass
+
+root = binary_tree(100)
+root.insert(50)
+root.insert(55)
+root.insert(60)
+root.insert(20)
+root.insert(52)
+root.print_tree()
+```
+### &ensp; Solution 2
+```python 
+class binary_tree:
+
+    def __init__(self, value):
+
+        self.left = None
+        self.right = None
+        self.value = value
+
+    def insert(self, value):
+
+        if self.value:
+            if value < self.value:
+                if self.left is None:
+                    self.left = binary_tree(value)
+                else:
+                    self.left.insert(value)
+            elif value > self.value:
+                if self.right is None:
+                    self.right = binary_tree(value)
+                else:
+                    self.right.insert(value)
+        else:
+            self.value = value
+
     def print_tree(self):
         if self.left:
             self.left.print_tree()
-        print( self.data),
+        print( self.value),
         if self.right:
             self.right.print_tree()
 
@@ -50,6 +168,6 @@ root.insert(55)
 root.insert(60)
 root.insert(20)
 root.insert(52)
-root.PrintTree()
+root.print_tree()
+
 ```
-### Problem 2
