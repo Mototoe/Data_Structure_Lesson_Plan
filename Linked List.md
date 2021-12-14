@@ -17,32 +17,217 @@ def _init_(self, value=none, next_node=None):
 ![DpkR1M8WwAEGRsw](https://user-images.githubusercontent.com/83718823/145902956-f66ca997-5cf5-47ce-93a0-1a45b866e000.jpg)
 ### &ensp;&emsp; Code Example:
 ```python
-'''Node class represents
-a node of the list'''
+
 class Node:
-        def _iit_
-(self, value) :
-self. value
-= value
-self.next = None
-CircularLinkedList class represents the circular linked list'
+        def _init_(self, value):
+                self.value = value
+                self.next = None
+
 class CircularLinkedList:
-def
--
-init
-(self):
-self.tail = None
-"'Returns True if the list is empty (so self.tail = None)
-Otherwise, returns False'
+        def_init(self):
+                self.tail = None
+
 def list is empty(self):
-return not self.tail
-if
-name
-==
-main
-1•
--
-my_list = circularLinkedList()
-print(f"My list is Empty? {my_list.list is empty()}")
-# Mv list is Empty? True
+        return not self.tail
+        
+if _name_=='_main_':
+        my_list = circularLinkedList()
+        print(f"My list is Empty? {my_list.list is empty()}")
+
+```
+## Practice Problems
+### &ensp; Problem 1
+&ensp;emsp; In this problem try to add a node to the linked list.
+```python
+class Node:
+    def __init__(self, data=None):
+        self.data = data
+        self.next = None
+class linked_list:
+    def __init__(self):
+        # Createe an empty list
+        self.head = None
+        self.tail = None
+        self.count = 0
+    def iterate_item(self):
+        # Iterate the list.
+        current_item = self.head
+        while current_item:
+            val = current_item.data
+            current_item = current_item.next
+            yield val
+    def append_item(self, data):
+        #Append items on the list
+        pass
+items = linked_list()
+items.append_items('a')
+items.append_items('b')
+items.append_items('c')
+items.append_items('d')
+items.append_items('c')
+for val in items.iterate_item():
+    print(val)
+print("\nhead.data: ",items.head.data)
+print("tail.data: ",items.tail.data)
+```
+### &ensp; Problem 2
+&ensp;emsp; For this problem the goal is to read and print the linked list reversed.
+```python
+class Node(object):
+    
+    def __init__(self, data=None, next=None, prev=None):
+        self.data = data
+        self.next = next
+        self.prev = prev
+
+class doubly_linked_list(object):
+    def __init__(self):
+        self.head = None
+        self.tail = None
+        self.count = 0
+
+    def append_items(self, data):
+        # Append an item 
+        new_item = Node(data, None, None)
+        if self.head is None:
+            self.head = new_item
+            self.tail = self.head
+        else:
+            new_item.prev = self.tail
+            self.tail.next = new_item
+            self.tail = new_item
+        self.count += 1
+    
+    def iter(self):
+        # Iterate the list
+        current = self.head
+        while current:
+            item_val = current.data
+            current = current.next
+            yield item_val
+
+    def print_foward(self):
+        for node in self.iter():
+            print(node)   
+        
+    def reverse(self):
+        #Reverse the linked list
+        
+
+items = doubly_linked_list()
+items.append_items('a')
+items.append_items('b')
+items.append_items('c')
+items.append_items('d')
+items.append_items('e')
+items.append_items('f')
+
+print("Reverse list ")
+items.reverse()
+items.print_foward()
+```
+### &ensp; Solution 1
+```python
+class Node:
+    def __init__(self, data=None):
+        self.data = data
+        self.next = None
+        
+class linked_list:
+    def __init__(self):
+        # Createe an empty list
+        self.head = None
+        self.tail = None
+        self.count = 0
+        
+    def iterate_item(self):
+        # Iterate the list.
+        current_item = self.head
+        while current_item:
+            val = current_item.data
+            current_item = current_item.next
+            yield val
+    def append_item(self, data):
+        #Append items on the list
+        node = Node(data)
+        if self.tail:
+            self.tail.next = node
+            self.tail = node
+        else:
+            self.head = node
+            self.tail = node
+        self.count += 1
+items = linked_list()
+items.append_items('a')
+items.append_items('b')
+items.append_items('c')
+items.append_items('d')
+items.append_items('c')
+for val in items.iterate_item():
+    print(val)
+print("\nhead.data: ",items.head.data)
+print("tail.data: ",items.tail.data)
+```
+### &ensp; Solution 2
+```python
+class Node(object):
+    
+    def __init__(self, data=None, next=None, prev=None):
+        self.data = data
+        self.next = next
+        self.prev = prev
+
+class doubly_linked_list(object):
+    def __init__(self):
+        self.head = None
+        self.tail = None
+        self.count = 0
+
+    def append_items(self, data):
+        # Append an item 
+        new_item = Node(data, None, None)
+        if self.head is None:
+            self.head = new_item
+            self.tail = self.head
+        else:
+            new_item.prev = self.tail
+            self.tail.next = new_item
+            self.tail = new_item
+        self.count += 1
+    
+    def iter(self):
+        # Iterate the list
+        current = self.head
+        while current:
+            item_val = current.data
+            current = current.next
+            yield item_val
+
+    def print_foward(self):
+        for node in self.iter():
+            print(node)   
+        
+    def reverse(self):
+        ''' Reverse linked list. '''
+        current = self.head
+        while current:
+            temp = current.next
+            current.next = current.prev
+            current.prev = temp
+            current = current.prev
+        temp = self.head
+        self.head = self.tail
+        self.tail = temp
+
+items = doubly_linked_list()
+items.append_items('a')
+items.append_items('b')
+items.append_items('c')
+items.append_items('d')
+items.append_items('e')
+items.append_items('f')
+
+print("Reverse list ")
+items.reverse()
+items.print_foward()
 ```
